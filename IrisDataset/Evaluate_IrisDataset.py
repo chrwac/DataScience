@@ -46,6 +46,6 @@ for i in range(0,len(y_train)):
 plt.xlabel("sepal width (cm)")
 plt.ylabel("petal length (cm)")
 ## plot the actual data points, 
-fig.savefig('C:/Studium/DataMining/IrisDataset/test.png')   # save the figure to file
+fig.savefig('C:/Studium/DataScience/IrisDataset/test.png')   # save the figure to file
 plt.close(fig)  
 
