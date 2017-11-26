@@ -1,3 +1,7 @@
+## Uses GridSearchCV on stratified subsets to
+## find optimal values for a RandomForestClassifier on
+## a two-dimensional subset (sepal width, petal length)
+## of the Iris - data set
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
@@ -9,7 +13,7 @@ print(data.feature_names)
 print(data.target_names)
 
 ## train on the features 2 and 3 (indices 1 and 2) only:
-## (only to better visualize the result in 2D:)
+## (only to better visualize the result in 2D)
 X_train = data.data[:,1:3]
 y_train = data.target
 rfc = RandomForestClassifier()
